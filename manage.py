@@ -1,6 +1,10 @@
 import os
 import unittest
 
+from dotenv import load_dotenv
+
+load_dotenv('.flaskenv')
+
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 
