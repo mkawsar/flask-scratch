@@ -33,6 +33,10 @@ def save_new_user(data):
         return response_object, 409
 
 
+def get_all_user():
+    return User.query.all()
+
+
 def save_changes(data):
     db.session.add(data)
     db.session.commit()
