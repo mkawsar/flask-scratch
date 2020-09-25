@@ -2,9 +2,6 @@ import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-HOST = os.getenv('HOST')
-PORT = int(os.getenv('FLASK_PORT', ''))
-
 POSTGRES = {
     'user': os.getenv('FlASK_POSTGRES_USER', ''),
     'pw': os.getenv('FlASK_POSTGRES_PW', ''),
