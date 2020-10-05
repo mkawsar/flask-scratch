@@ -3,11 +3,11 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 POSTGRES = {
-    'user': os.getenv('FlASK_POSTGRES_USER', ''),
-    'pw': os.getenv('FlASK_POSTGRES_PW', ''),
-    'host': os.getenv('FlASK_POSTGRES_HOST', ''),
-    'port': os.getenv('FlASK_POSTGRES_PORT', ''),
-    'db': os.getenv('FlASK_POSTGRES_DB', ''),
+    'user': os.getenv('FlASK_POSTGRES_USER', 'root'),
+    'pw': os.getenv('FlASK_POSTGRES_PW', 'root'),
+    'host': os.getenv('FlASK_POSTGRES_HOST', '127.0.0.1'),
+    'port': os.getenv('FlASK_POSTGRES_PORT', '5432'),
+    'db': os.getenv('FlASK_POSTGRES_DB', 'flask-scratch'),
 }
 
 
