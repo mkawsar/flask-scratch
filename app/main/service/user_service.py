@@ -33,8 +33,12 @@ def save_new_user(data):
         return response_object, 409
 
 
-def get_all_user():
+def get_all_users():
     return User.query.all()
+
+
+def get_a_user(public_id):
+    return User.query.filter_by(public_id=public_id).first()
 
 
 def save_changes(data):
