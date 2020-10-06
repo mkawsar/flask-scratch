@@ -13,7 +13,7 @@ class UserList(Resource):
     @api.marshal_list_with(_user, envelope='data')
     def get(self):
         """List all registered users"""
-        return get_all_user()
+        return get_all_users()
 
     @api.doc('create a new user')
     @api.expect(_user, validate=True)

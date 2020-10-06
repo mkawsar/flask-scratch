@@ -18,14 +18,14 @@ def save_new_user(data):
         )
 
         save_changes(new_user)
-        return generate_token(new_user)
+        #return generate_token(new_user)
 
-        # response_object = {
-        #     'status': 'success',
-        #     'message': 'Successfully registered'
-        # }
+        response_object = {
+            'status': 'success',
+            'message': 'Successfully registered'
+        }
 
-        # return response_object, 201
+        return response_object, 201
     else:
         response_object = {
             'status': 'fail',
